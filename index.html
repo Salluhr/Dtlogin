@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="forms.css" rel="stylesheet" type="text/css" />
+    <script src="28forms.js"></script>
+</head>
+
+<body>
+    <hr />
+    <div class="container container2">
+        <div class="panel panel-primary col-md-6">
+            <div class="panel-heading">
+                <h4>Login Page</h4>
+            </div>
+            <div class="panel-body">
+                <form action="" method="POST">
+                    <div class="row">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" name="email" class="form-control" id="email" oninput="validateEmail()" />
+                            <p id="eout"></p>
+                        </div>
+                        <div class="form-group ">
+                            <label>Password</label>
+                            <input type="password" name="pwd" class="form-control" id="pwd" oninput="validatePass()" />
+                            <span class="glyphicon glyphicon-eye-open" onClick="showPassword()"></span>
+                            <p id="pout"></p>
+                            <div id="ppout"></div>
+                        </div>
+                        <p class="para"><a href="#">Forgot Password</a></p>
+                        <p class="para">New User <a href="registration.html">Register</a> </p>
+                    </div>
+                    <button type="submit" class="btn btn-success paras"> Login </button>
+                    <button class="btn btn-danger paras">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
