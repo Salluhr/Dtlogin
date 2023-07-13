@@ -1,0 +1,110 @@
+#container{
+    width:50%;
+    height:55vh;
+    float: left;
+    margin-left: 25%;
+    margin-top: 2%;
+   
+}
+.mainlabel{
+    height:7vh;
+    background-color: rgb(5, 25, 25);
+    
+}
+.mainlabel label{
+   color: antiquewhite;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 5vh;
+    margin-left: 31%;
+}  
+
+
+
+#maindiv{
+    height:100%;
+    width:100%;
+    background-color: rgb(206 202 195);
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+
+#fdiv{
+    margin-left: 5%;
+    height: 25%;
+    background-color: aqua;
+}
+#fdiv input{
+    width:95% 
+} 
+
+.s-class{
+    margin-left: 5%;
+    width:95%;
+    height: 20%;
+    position: relative;
+    background-color: rgb(18, 66, 66);
+}
+
+.s1-class{
+    width:50%;
+    float: left;
+}
+
+.s1-class input{
+    width:90%;
+}
+
+
+.b-class{
+    margin-left: 5%;
+}
+
+.lab1{
+    height:25%
+}
+
+
+#forg button{
+    
+    margin-left: 25%;
+    border-color: rgb(206 202 195);
+    background-color: rgb(206 202 195);
+    color: rgb(57, 101, 139);
+}
+
+.paras{
+    height:15%
+}
+.newu{
+    width:40%;
+    float: left;
+    margin-left: 20%;
+}
+.forgpas{
+    width:40%;
+    float: left;
+    margin-left: -15%;
+}
+
+.forgpas  button{
+border-color:rgb(206 202 195);
+color: rgb(57, 101, 139);
+background-color: rgb(206 202 195);
+}
+
+.log-but{
+    height:20%
+}
+
+.log-but-1{
+   width:40%;
+   float: left;
+   margin-left:  10% ;
+}
+
+
+.design{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:80%;
+    font-size: 2.5vh;
+}

@@ -54,12 +54,13 @@ function Mypage() {
         </div>
 <div id="maindiv">
         <div id="content">
+          {/* first div */}
           <div className="lab">
             <div className="lab1"><label className="design">Email</label></div>
-            <div className="lab2"><input  type="text"   name="email" id="email" onInput={() => validateEmail()}  /></div>
+            <div className="lab2"><input  type="text" name="email" id="email" onInput={() => validateEmail()}/></div>
             <div className="lab3"><p id="eout" /></div>
           </div>
-
+      
           <div className="lab">
             <div className="lab1"><label className="design">Password</label></div>
             <div className="lab2"><input  type="password"  name="pwd" id="pwd" onInput={() => validatePass()} /></div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./login.css";
+import "./registration.css";
 import { useNavigate } from "react-router-dom";
 
 function Registration() {
@@ -93,105 +93,121 @@ function Registration() {
 
     return (
         <div>
-            <div className="container">
-                <div className="panel panel-primary">
-                    <div className="panel-heading">
-                        <h4>Registration Page</h4>
+             <div id="container">
+               <div className="mainlabel">
+                 <label>Registration Page </label>
+               </div>
+
+               <div id="maindiv">
+                     
+               <form action method="POST">
+                    {/* first div */}
+                    <div id="fdiv">
+                        <div className="lab1"><label htmlFor="firstname" className="design">Name</label></div>
+                        <div className="lab2"><input type="text" name="fname" placeholder="Enter Your Full Name" id="fname"onBlur={() => validateFname()} /></div>
+                        <div className="lab3"><p id="fout" /></div>
                     </div>
+
+                   {/* second div */}
+                    <div className="s-class">
+                        <div className="s1-class">
+                            <div className="lab1"><label className="design">Email</label></div>
+                            <div className="lab2">
+                                <input type="text"  name="email"  id="email" onInput={() => validateEmail()}/>
+                            </div>
+                            <div className="lab3"><p id="eout" /></div>
+                        </div>
+
+                        <div className="s1-class">
+                            <div className="lab1"><label className="design">Mobile Number</label></div>
+                            <div className="lab2">
+                                <input type="number" name="mob" id="mob" onInput={() => validatenumber()} />
+                            </div>
+                            <div className="lab3"><p id="mout" /></div>
+                        </div>
+                    </div>
+
+                    {/* third div */}
+                    <div className="s-class">
+                        <div className="s1-class">
+                            <div className="lab1"><label>Password</label></div>
+                            <div className="lab2"> <input type="password"  name="pwd" id="pwd" onInput={() => validatePass()}/></div>    
+                            <div className="lab4"> <span className="glyphicon glyphicon-eye-open" onClick={() => showPassword()}/></div>  
+                            <div className="lab3">
+                                <p id="pout" />
+                                <p id="ppout" />
+                            </div>
+                        </div>
+                        <div className="s1-class">
+                            <div className="lab1"> <label>Confirm Password</label></div>           
+                            <div className="lab2"><input type="password"  name="cpwd" id="cpwd" onInput={() => validateCPass()}/></div>            
+                            <div className="lab3"><p id="cpout"/></div>           
+                        </div>
+                    </div>
+                    
+               </form>  
+               </div>
+               
+               {/* pending work */}
+               
+
+
+
+           
                     <div className="panel-body">
                         <form action method="POST">
                             <div className="form-group" id="fdiv">
-                                <label htmlFor="firstname" className="control-label">
-                                    Name
-                                </label>
-                                <input
-                                    type="text"
-                                    name="fname"
-                                    placeholder="Enter Your Full Name"
-                                    className="form-control"
-                                    id="fname"
-                                    onBlur={() => validateFname()} />
+                                <label htmlFor="firstname" className="control-label">Name</label>
+                                <input type="text" name="fname" placeholder="Enter Your Full Name"
+                                    className="form-control" id="fname"onBlur={() => validateFname()} />
                                 <p id="fout" />
                             </div>
+
                             <div className="row">
                                 <div className="form-group col-md-6">
                                     <label>Email</label>
-                                    <input
-                                        type="text"
-                                        name="email"
-                                        className="form-control"
-                                        id="email"
-                                        onInput={() => validateEmail()}
-                                    />
+                                    <input type="text"  name="email" className="form-control" id="email" onInput={() => validateEmail()}/>
                                     <p id="eout" />
                                 </div>
 
                                 <div className="form-group col-md-6">
                                     <label>Mobile Number</label>
-                                    <input
-                                        type="number"
-                                        name="mob"
-                                        className="form-control"
-                                        id="mob"
-                                        onInput={() => validatenumber()}
-                                    />
+                                    <input type="number" name="mob" className="form-control" id="mob" onInput={() => validatenumber()} />
                                     <p id="mout" />
                                 </div>
 
                                 <div className="form-group col-md-6">
                                     <label>Password</label>
-                                    <input
-                                        type="password"
-                                        name="pwd"
-                                        className="form-control"
-                                        id="pwd"
-                                        onInput={() => validatePass()}
-                                    />
-                                    <span
-                                        className="glyphicon glyphicon-eye-open"
-                                        onClick={() => showPassword()}
-                                    />
+                                    <input type="password"  name="pwd" className="form-control" id="pwd" onInput={() => validatePass()}/>
+                                    <span className="glyphicon glyphicon-eye-open" onClick={() => showPassword()}/>
                                     <p id="pout" />
                                     <div id="ppout" />
                                 </div>
 
                                 <div className="form-group col-md-6">
                                     <label>Confirm Password</label>
-                                    <input
-                                        type="password"
-                                        name="cpwd"
-                                        className="form-control"
-                                        id="cpwd"
-                                        onInput={() => validateCPass()}
-                                    />
+                                    <input type="password"  name="cpwd" className="form-control" id="cpwd" onInput={() => validateCPass()}/>
                                     <p id="cpout" />
                                 </div>
                             </div>
+
                             <div className="form-group">
                                 <label>Country</label>
-                                <select
-                                    className="form-control"
-                                    name="country"
-                                    id="country"
-                                    onChange={() => getCity()}
-                                >
+                                <select className="form-control"  name="country"  id="country" onChange={() => getCity()}>
                                     <option>India</option>
                                     <option>France</option>
                                     <option>Germany</option>
                                 </select>
                                 <span />
                             </div>
-                            <button type="submit" className="btn btn-primary">
-                                Register
-                            </button>
-                            <button type="submit" className="btn btn-success paras" onClick={() => { navigateTo('/login') }}>
-                                Login
-                            </button>
+
+                            <button type="submit" className="btn btn-primary"> Register </button>
+                            <button type="submit" className="btn btn-success paras" onClick={() => { navigateTo("/")}}>    Login </button>
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
+        
     );
 }
 export default Registration;
