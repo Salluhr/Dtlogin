@@ -1,6 +1,7 @@
+
 #container{
     width:50%;
-    height:55vh;
+    height:65vh;
     float: left;
     margin-left: 25%;
     margin-top: 2%;
@@ -8,8 +9,6 @@
 }
 .mainlabel{
     height:7vh;
-    background-color: rgb(5, 25, 25);
-    
 }
 .mainlabel label{
    color: antiquewhite;
@@ -19,92 +18,94 @@
 }  
 
 
+form{
+    height:100% ;
+    background-image: url("https://i.ibb.co/RBLpBN4/rg.jpg");
+    background-size:cover;
+}
 
 #maindiv{
     height:100%;
     width:100%;
-    background-color: rgb(206 202 195);
     border-bottom-right-radius: 15%;
     border-bottom-left-radius: 15%;
+
 }
 
 #fdiv{
     margin-left: 5%;
     height: 25%;
-    background-color: aqua;
 }
 #fdiv input{
-    width:95% 
+    width:95% ;
+    height:100%;
+    border-radius: 10% !important;
 } 
 
 .s-class{
     margin-left: 5%;
     width:95%;
-    height: 20%;
-    position: relative;
-    background-color: rgb(18, 66, 66);
+    height: 25%;
+    
 }
 
 .s1-class{
+    height:100%;
     width:50%;
     float: left;
 }
 
 .s1-class input{
     width:90%;
+    height:100%;
 }
 
 
-.b-class{
-    margin-left: 5%;
+
+.s2-class{
+    height:100%;
+    width:50%;
+    float: left;
 }
+
 
 .lab1{
-    height:25%
+    height:35%
+}
+.lab2{
+    height:30%
 }
 
-
-#forg button{
-    
-    margin-left: 25%;
-    border-color: rgb(206 202 195);
-    background-color: rgb(206 202 195);
-    color: rgb(57, 101, 139);
+.slab1{
+    height:35%
 }
-
-.paras{
-    height:15%
+.slab2{
+    height:30%
 }
-.newu{
-    width:40%;
-    float: left;
-    margin-left: 20%;
-}
-.forgpas{
-    width:40%;
-    float: left;
-    margin-left: -15%;
-}
-
-.forgpas  button{
-border-color:rgb(206 202 195);
-color: rgb(57, 101, 139);
-background-color: rgb(206 202 195);
-}
-
-.log-but{
-    height:20%
-}
-
-.log-but-1{
-   width:40%;
-   float: left;
-   margin-left:  10% ;
-}
-
 
 .design{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width:80%;
-    font-size: 2.5vh;
+    font-size: 2.8vh;
+    margin-top: 2%;
 }
+
+.s1-class button{
+    margin-left:25% ;
+    border-radius: 15%;
+    border-color: #198754; ;
+    height:45%;
+    width:30%;
+    background-color: #198754;
+}
+.s2-class button{
+    margin-left:20% ;
+    border-radius: 15%;
+    height:45%;
+    width:30%;
+    border-color: #337ab7;
+    background-color: #337ab7
+}
+
+
+

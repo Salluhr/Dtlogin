@@ -92,69 +92,80 @@ function Registration() {
     };
 
     return (
-        <div>
-             <div id="container">
-               <div className="mainlabel">
-                 <label>Registration Page </label>
-               </div>
+       
+        <div id="container">
+        <div className="mainlabel">
+            <label>Registration Page </label>
+        </div>
 
-               <div id="maindiv">
-                     
-               <form action method="POST">
-                    {/* first div */}
-                    <div id="fdiv">
-                        <div className="lab1"><label htmlFor="firstname" className="design">Name</label></div>
-                        <div className="lab2"><input type="text" name="fname" placeholder="Enter Your Full Name" id="fname"onBlur={() => validateFname()} /></div>
-                        <div className="lab3"><p id="fout" /></div>
+       <div id="maindiv">
+             
+            <form action method="POST" >
+                
+                {/* first div */}
+                <div id="fdiv">
+                    <div className="lab1"><label htmlFor="firstname" className="design">Name</label></div>
+                    <div className="lab1"><input type="text" name="fname" placeholder="Enter Your Full Name" id="fname"onBlur={() => validateFname()} /></div>
+                    <div className="lab2"><p id="fout" /></div>
+                </div>
+
+              {/* second div */}
+                <div className="s-class">
+                    <div className="s1-class">
+                        <div className="lab1"><label className="design">Email</label></div>
+                        <div className="lab1">
+                            <input type="text"  name="email"  id="email" onInput={() => validateEmail()}/>
+                        </div>
+                        <div className="lab2"><p id="eout" /></div>
                     </div>
 
-                   {/* second div */}
-                    <div className="s-class">
-                        <div className="s1-class">
-                            <div className="lab1"><label className="design">Email</label></div>
-                            <div className="lab2">
-                                <input type="text"  name="email"  id="email" onInput={() => validateEmail()}/>
-                            </div>
-                            <div className="lab3"><p id="eout" /></div>
+                    <div className="s1-class">
+                        <div className="lab1"><label className="design">Mobile Number</label></div>
+                        <div className="lab1">
+                            <input type="number" name="mob" id="mob" onInput={() => validatenumber()} />
                         </div>
+                        <div className="lab2"><p id="mout" /></div>
+                    </div>
+                </div>
 
-                        <div className="s1-class">
-                            <div className="lab1"><label className="design">Mobile Number</label></div>
-                            <div className="lab2">
-                                <input type="number" name="mob" id="mob" onInput={() => validatenumber()} />
-                            </div>
-                            <div className="lab3"><p id="mout" /></div>
+                {/* third div */}
+                <div className="s-class">
+                    <div className="s1-class">
+                        <div className="slab1"><label className="design">Password</label></div>
+                        <div className="slab1"> <input type="password"  name="pwd" id="pwd" onInput={() => validatePass()}/></div>    
+                        <div className="slab2"> 
+                            <span className="glyphicon glyphicon-eye-open" onClick={() => showPassword()}/>
+                            <span id="pout" />
+                            <span id="ppout" />
                         </div>
                     </div>
-
-                    {/* third div */}
-                    <div className="s-class">
-                        <div className="s1-class">
-                            <div className="lab1"><label>Password</label></div>
-                            <div className="lab2"> <input type="password"  name="pwd" id="pwd" onInput={() => validatePass()}/></div>    
-                            <div className="lab4"> <span className="glyphicon glyphicon-eye-open" onClick={() => showPassword()}/></div>  
-                            <div className="lab3">
-                                <p id="pout" />
-                                <p id="ppout" />
-                            </div>
-                        </div>
-                        <div className="s1-class">
-                            <div className="lab1"> <label>Confirm Password</label></div>           
-                            <div className="lab2"><input type="password"  name="cpwd" id="cpwd" onInput={() => validateCPass()}/></div>            
-                            <div className="lab3"><p id="cpout"/></div>           
-                        </div>
+                    <div className="s1-class">
+                        <div className="lab1"> <label className="design">Confirm Password</label></div>           
+                        <div className="lab1"><input type="password"  name="cpwd" id="cpwd" onInput={() => validateCPass()}/></div>            
+                        <div className="lab2"><p id="cpout"/></div>           
                     </div>
-                    
-               </form>  
-               </div>
+                </div>
+
+                {/* fourth  div */}
+
+                <div className="s-class">
+                    <div className="s1-class" >
+                        <button type="submit" className=""> Register </button>
+                    </div>
+                    <div className="s2-class">
+                        <button type="submit" className="" onClick={() => { navigateTo("/")}}>    Login </button>
+                    </div>
+                </div>
+             
+            </form>  
+        </div>
+</div>   
+               );
+}
+export default Registration;
+              {/*  pending work
                
-               {/* pending work */}
-               
-
-
-
-           
-                    <div className="panel-body">
+               <div className="panel-body">
                         <form action method="POST">
                             <div className="form-group" id="fdiv">
                                 <label htmlFor="firstname" className="control-label">Name</label>
@@ -206,8 +217,28 @@ function Registration() {
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> 
+
+<div className="container">
+    <div className="label">
+
+    </div>
+    <div className="maincontent">
+        <div className="1class">
+
+        </div>
+        <div className="2class">
+
+        </div>
+        <div className="3class">
+
+        </div>
+        <div className="4class">
+
+        </div>
+    </div>
+</div >   */}
+
+
         
-    );
-}
-export default Registration;
+    
